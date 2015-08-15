@@ -14,7 +14,7 @@ nome_categ_esportiva varchar,
 num_min_participantes_cat integer,
 num_max_participantes_cat integer,
 id_categoria_esportiva_cat varchar PRIMARY KEY,
-num_atual_participante_cat Número(4)
+num_atual_participante_cat integer
 )
 
 CREATE TABLE Convite (
