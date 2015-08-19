@@ -26,7 +26,8 @@ resposta_convite boolean
 CREATE TABLE Evento ( 
 id_evento smallint unsigned auto_increment, 
 nome_evento varchar(50), 
-data_evento date, horario_evento time,
+data_evento date, 
+horario_evento time,
 local_evento varchar(50), 
 descricao_evento varchar(200), 
 privacidade_evento ENUM('publico', 'privado'), 
