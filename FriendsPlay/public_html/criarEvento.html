@@ -17,7 +17,20 @@ and open the template in the editor.
         <div id="interface">
             <header id="cabecalho">
                 <hgroup>
+                   <!--Adicionando a foto do perfil-->
+                    <figure class = "foto-legenda">
+                        <img src="_imagens/avatar-perfil-mas.jpg"/>
+                        <figcaption>
+                            <p>
+                                 Atualizar foto
+                            </p>
+                        </figcaption>
+                    </figure>
+                    
+                    
+                    Nome do usuário e mais algumas informações pega no facebook 
                     <h1>Friend's Play</h1>
+                    logo da friend's Play
                 </hgroup>
 
                 <nav id="menu">
@@ -36,24 +49,28 @@ and open the template in the editor.
                             <h1>Menu > Criar Evento</h1>
                         </hgroup>
                      </header>
-                        <form method="post" id="FCriarEvento">
+                        
+                    <form method="post" id="FCriarEvento">
                             
-                                <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome do evento"/></p>
-                                <p><label for="cModalidade">Modalidade:</label>
+                        <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome do evento"/>
+                                <label for="cModalidade">Modalidade:</label>
                                     <input type="text" name="tModalidade" id="cModalidade" size="25" maxlength="30" placeholder="Modalidade do evento"/></p>
                                 
-                                <p><label for="cLocal">Local:</label><input type="text" name="tLocal" id="cLocal" size="20" maxlength="30" placeholder="Local do evento"/></p>
-                                <p><label for="cData">Data:</label><input type="date" name="tName" id="cData"/></p>
-                                <p><label for="cHora">Hora:</label><input type="time" name="tHora" id="cHora"/></p>
+                                
+                                
+                                <p><label for="cLocal">Local:</label><input type="text" name="tLocal" id="cLocal" size="20" maxlength="30" placeholder="Local do evento"/>
+                                <label for="cData">Data:</label><input type="date" name="tName" id="cData"/>
+                                <label for="cHora">Hora:</label><input type="time" name="tHora" id="cHora"/></p>
                             
                                 <p><label for="cNumMin">Nº mínimo de participantes:</label>
-                                    <input type="number" name="tNumMin" id="cNumMin" min="1" max="99999"/></p>
-                                <p><label for="cNumMax">Nº máximo de participantes:</label>
+                                    <input type="number" name="tNumMin" id="cNumMin" min="1" max="99999"/>
+                                    <label for="cNumMax">Nº máximo de participantes:</label>
                                     <input type="number" name="tNumMax" id="cNumMax" min="1" max="99999"/></p>
                                 
                                 
                                 <p><label for="cMensagem">Descrição:</label>
                                 <textarea  name="tMensagem" id="cMensagem" cols="45" rows="5" placeholder="Deixe aqui a descrição do evento..."/></textarea></p>
+                                
                                 <fieldset id="privacidade"><legend>Privacidade:</legend>
                                 <input type="radio" name="tPrivacidade" id="cPublico" checked/> <label for="cPublico">Público</label><br/>
                                 <input type="radio" name="tPrivacidade" id="cPrivado"/> <label for="cPrivado">Privado</label>
@@ -61,7 +78,7 @@ and open the template in the editor.
                             
                             
                         </form>
-                    
+                    CRIAR EVENTO!!!
                 </article>
                 <footer id="rodape">
                 <p>

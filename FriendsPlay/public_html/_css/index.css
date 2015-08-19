@@ -10,7 +10,8 @@ and open the template in the editor.
 @chaset "UTF-8";
 
 body{
-    //background: url("../_imagens/fundo01.jpg") 50% 50%;
+    
+    
 }
 
 div#pagina-principal{
@@ -18,7 +19,8 @@ div#pagina-principal{
         background-color: white; 
 	margin:  0px auto 0px auto; /*Define de altura, largura(esquerda), baixo e largura(direita) respectivamente */
 	box-shadow: 0px 0px 10px rgba(0,0,0,.9); /*define as caracteristicas da sombra da borda*/
-	padding-bottom: 50px;  
+	padding-bottom: 50px; 
+        
 }
 
 section#principal{
