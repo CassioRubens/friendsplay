@@ -2,42 +2,39 @@
 --caso voces tenham duvidas ou sugestões é só chamar 
 
 CREATE TABLE Usuario (
-link_usuario varchar,
-nome_usuario varchar,
+link_usuario varchar(50),
+nome_usuario varchar(30),
 data_de_nascimento_usuario date,
-genero_usuario varchar,
-id_usuario varchar PRIMARY KEY
+genero_usuario ENUM('M', 'F'),
+id_usuario smallint PRIMARY KEY
 )
 
 CREATE TABLE Categoria_Esportiva (
-nome_categ_esportiva varchar,
+nome_categ_esportiva varchar(30),
 num_min_participantes_cat integer,
 num_max_participantes_cat integer,
-id_categoria_esportiva_cat varchar PRIMARY KEY,
+id_categoria_esportiva_cat smallint unsigned auto_increment PRIMARY KEY,
 num_atual_participante_cat integer
 )
 
 CREATE TABLE Convite (
-id_convite varchar PRIMARY KEY,
-id_vento varchar,
+id_convite smallint unsigned auto_increment PRIMARY KEY,
+id_vento smallint,
 resposta_convite boolean
 )
 
-CREATE TABLE Evento (
-id_evento varchar PRIMARY KEY,
-nome_evento varchar,
-data_evento date,
+CREATE TABLE Evento ( 
+id_evento smallint unsigned auto_increment, 
+nome_evento varchar(50), 
+data_evento date, 
 horario_evento time,
-local_evento varchar,
-descricao_evento varchar,
-privacidade_evento varchar,
-id_categoria_esportiva_evento varchar,
-id_criador_evento varchar,
-contador_participantes_evento integer,
-FOREIGN KEY(id_categoria_esportiva_evento) REFERENCES Categoria_Esportiva (id_categoria_esportiva_cat),
-FOREIGN KEY(id_criador_evento) REFERENCES Usuario (id_usuario)
-)
-
-ALTER TABLE Categoria_Esportiva ADD FOREIGN KEY(num_atual_participante_cat) REFERENCES Evento (id_evento)
-ALTER TABLE Convite ADD FOREIGN KEY(id_vento) REFERENCES Convite (id_convite)
+local_evento varchar(50), 
+descricao_evento varchar(200), 
+privacidade_evento ENUM('publico', 'privado'), 
+id_categoria_esportiva_cat SMALLINT unsigned, 
+id_usuario SMALLINT unsigned, 
+contador_participantes_evento integer, 
+CONSTRAINT pk_evento PRIMARY KEY(id_evento), 
+CONSTRAINT fk_categoria_evento FOREIGN KEY(id_categoria_esportiva_cat) 
+        REFERENCES Categoria_Esportiva(id_categoria_esportiva_cat) )
 
