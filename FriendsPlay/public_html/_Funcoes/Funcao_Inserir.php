@@ -14,6 +14,7 @@
                 return false;
             }
         }  else {
+            //
             //Montar sql
             $inserir = "insert into {$tabela} ({$coluna}) values ('{$valor}')";
         }

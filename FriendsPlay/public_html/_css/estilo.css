@@ -19,22 +19,22 @@ div#interface{
     background-color: white;
     margin:  0px 200px 0px auto;
     box-shadow: 0px 0px 10px rgba(4,2,2,.6); /*define as caracteristicas da sombra da borda*/
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     padding: 10px;
     
 }
 
 
-
-div#interface h1{
+div#interface header#cabecalho h1{
     font-family: Arial, sans-serif;
-    color: blue;
+    color: black;
+    padding-bottom: 30px;
 }
 
 header#cabecalho iframe#calendario{
-    position: relative;
-    top: 110px;
-    right: 240px;
+    position: absolute;
+    top: 240px;
+    left: 110px;
     width: 220px;
     height: 250px;
 }
@@ -57,7 +57,7 @@ nav#menu ul{
     text-transform: uppercase;
     position: absolute;
     top: 40px;
-    left: 22px;
+    left: 88px;
     text-align: left;
     font-size: 10pt;
 }
@@ -83,11 +83,16 @@ section#principal {
 	border-top: 1px dashed #606060;
 	padding-top: -10px;
         font-family: sans-serif;
+         
 }
 
 article#noticia-pricipal h3{
     font-size: 12pt;
     font: sans-serif;
+}
+
+article#noticia-pricipal header#cabecalho{
+    
 }
 
 /*define as caracteristicas da sessão de baixo do site ou roda pé.*/
