@@ -55,34 +55,32 @@ and open the template in the editor.
                      </header>
 
                     <!---->
-                    <form method="post" id="FCriarEvento">
+                    <form action="_inserts/InserirEvento.php" method="post">
+                    
+                        <label for="nome">Nome:</label>
+                        <br><input type="text" id="nome" name="nome">
+                        
+                        <br><label for="modalidade">Modalidade:</label>
+                        <br><input type="text" id="modalidade" name="modalidade">
+                        
+                        <br> <label for="local">Local:</label>
+                        <br><input type="text" id="local" name="local">
+                        
+                        <br><label for="data">Data:</label>
+                        <br><input type="date" id="data" name="data">
+
+                        <br><label for="hora">Hora:</label>
+                        <br><input type="time" id="hora" name="hora">
+
+                        <br><label for="privacidade">Privacidade:</label>
+                        <br><input type="text" id="privacidade" name="privacidade">
+
+                        <br><label for="descricao">Descrição:</label>
+                        <br><textarea id="descricao" name="descricao"></textarea> <br>
+                        
+                        <br><button>Cadantrar</button>
                             
-                        <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome do evento"/>
-                                <label for="cModalidade">Modalidade:</label>
-                                    <input type="text" name="tModalidade" id="cModalidade" size="25" maxlength="30" placeholder="Modalidade do evento"/></p>
-                                
-                                
-                                
-                                <p><label for="cLocal">Local:</label><input type="text" name="tLocal" id="cLocal" size="20" maxlength="30" placeholder="Local do evento"/>
-                                <label for="cData">Data:</label><input type="date" name="tName" id="cData"/>
-                                <label for="cHora">Hora:</label><input type="time" name="tHora" id="cHora"/></p>
-                            
-                                <p><label for="cNumMin">Nº mínimo de participantes:</label>
-                                    <input type="number" name="tNumMin" id="cNumMin" min="1" max="99999"/>
-                                    <label for="cNumMax">Nº máximo de participantes:</label>
-                                    <input type="number" name="tNumMax" id="cNumMax" min="1" max="99999"/></p>
-                                
-                                
-                                <p><label for="cMensagem">Descrição:</label>
-                                <textarea  name="tMensagem" id="cMensagem" cols="45" rows="5" placeholder="Deixe aqui a descrição do evento..."/></textarea></p>
-                                
-                                <fieldset id="privacidade"><legend>Privacidade:</legend>
-                                <input type="radio" name="tPrivacidade" id="cPublico" checked/> <label for="cPublico">Público</label><br/>
-                                <input type="radio" name="tPrivacidade" id="cPrivado"/> <label for="cPrivado">Privado</label>
-                            </fieldset>
-                            
-                            
-                        </form>
+                    </form>
                     CRIAR EVENTO
                 </article>
                 <footer id="rodape">
