@@ -57,31 +57,98 @@ and open the template in the editor.
                     <!---->
                     <form action="_inserts/InserirEvento.php" method="post">
                     
-                        <label for="nome">Nome:</label>
-                        <br><input type="text" id="nome" name="nome">
+                        <fieldset id="perfil"> <legend>Perfil</legend>
                         
-                        <br><label for="modalidade">Modalidade:</label>
-                        <br><input type="text" id="modalidade" name="modalidade">
+                            <p><label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nNome" placeholder="Nome do evento"></p>
                         
-                        <br> <label for="local">Local:</label>
-                        <br><input type="text" id="local" name="local">
+                            <p><label for="modalidade">Modalidade:</label>
+                            <input type="text" id="modalidade" name="nModalidade" placeholder="Modalidade do evento"/></p>
+                        </fieldset>
                         
-                        <br><label for="data">Data:</label>
-                        <br><input type="date" id="data" name="data">
-
-                        <br><label for="hora">Hora:</label>
-                        <br><input type="time" id="hora" name="hora">
-
-                        <br><label for="privacidade">Privacidade:</label>
-                        <br><input type="text" id="privacidade" name="privacidade">
-
-                        <br><label for="descricao">Descrição:</label>
-                        <br><textarea id="descricao" name="descricao"></textarea> <br>
+                        <fieldset id="endereco"><legend>Endereço do Evento</legend>
                         
-                        <br><button>Cadantrar</button>
+                            <p><label for="local">Logradouro:</label>
+                            <input type="text" id="local" name="nLocal" placeholder="Rua, Av, Trav..."></p>
+                        
+                            <p><label for="numeroDoLocal">Número:</label>
+                            <input type="number" name="nNumeroDolocal" id="numeroDoLocal" min="0" max="99999"/></p>
                             
+                            <p><label for="cidade">Cidade:</label>
+                                <input type="text" name="nCidade" id="cidade" size="20" maxlength="30" placeholder="Cidade do evento" list="cidades"/></p>
+                            
+                            <p><label for="cEstado">Estado:</label>
+                                
+                                <!--SELECT mostra apenas as escolhas que o usuário pode ver-->
+                                <select type="text" name="tEstado" id="cEstado">
+                                    
+                                    <!--OPTGROUP defini um grupo de opções disponíveis para os
+                                    usuários, e OPTION são as opções-->
+                                    <optgroup label="Estados">
+                                        <option value="AC">AC</option>
+                                        <option value="AL">AL</option>
+                                        <option value="AP">AP</option>
+                                        <option value="AM">AM</option>
+                                        <option value="BA">BA</option>
+                                        <option value="CE">CE</option>
+                                        <option value="DF">DF</option>
+                                        <option value="ES">ES</option>
+                                        <option value="GO">GO</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MT">MT</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MG">MG</option>
+                                        <option value="PA">PA</option>
+                                        <option value="PB">PB</option>
+                                        <option value="PR">PR</option>
+                                        <option value="PE">PE</option>
+                                        <option value="PI">PI</option>
+                                        <option value="RG">RG</option>
+                                        <option value="RN">RN</option>
+                                        <option value="RS">RS</option>
+                                        <option value="RO">RO</option>
+                                        <option value="RR">RR</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SP">SP</option>
+                                        <option value="SE">SE</option>
+                                        <option value="TO">TO</option>
+                                    </optgroup>
+                                   
+                                </select></p>
+                            
+                        </fieldset>
+                        
+                        <fieldset id="caracteristica"> <legend>Caracteristicas e data</legend> 
+                        
+                            <p><label for="data">Data:</label>
+                            <input type="date" id="data" name="data">
+
+                            <label for="hora">Hora:</label>
+                            <input type="time" id="hora" name="hora"></p>
+                        
+                            <p><label for="NumMin">Nº mínimo de participantes:</label>
+                                <input type="number" name="nNumMin" id="NumMin" min="1" max="99999"/></p>
+                            <p><label for="cNumMax">Nº máximo de participantes:</label>
+                            <input type="number" name="nNumMax" id="cNumMax" min="1" max="99999"/></p>
+                            <fieldset id="privacidadeEvento"><legend>Privacidade</legend>
+                            <input type="radio" name="tSexo" id="cMasc" checked/> <label for="cMasc">Publico</label><br/>
+                                <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Privado</label>
+                        </fieldset>
+                            </fieldset>
+                        
+                            
+                        
+                        
+                        <fieldset id="mensagem"><legend>Deixe aqui um aviso para convidados</legend>
+                          
+                        <label for="descricao">Descrição:</label>
+                        <textarea id="descricao" name="descricao" cols="45" rows="5" placeholder="Deixe aqui sua mensagem..."></textarea> <br>
+                        
+                        </fieldset>
+                        
+                        
+                        <br><button>Criar evento</button>            
                     </form>
-                    CRIAR EVENTO
                 </article>
                 <footer id="rodape">
                 <p>
