@@ -21,10 +21,10 @@ and open the template in the editor.
                 <nav id="menu">
                     <ul>
                         
-                        <li><a href="criarEvento.html">Criar Evento</a></li>
-                        <li><a href="convites.html">Convites</a></li>
-                        <li><a href="eventosCriados.html">Eventos Criados</a></li>
-                        <li><a href="partipacaoEventos.html">Participação em Eventos</a></li>
+                        <li><a href="criarEvento.php">Criar Evento</a></li>
+                        <li><a href="convites.php">Convites</a></li>
+                        <li><a href="eventosCriados.php">Eventos Criados</a></li>
+                        <li><a href="partipacaoEventos.php">Participação em Eventos</a></li>
                     </ul>
                 </nav>
                 <iframe name="janela-calendario" id="calendario" src="https://www.google.com/calendar/embed?src=86c4o9bhc1p9shjob2pcf7sbq4%40group.calendar.google.com&ctz=America/Fortaleza"></iframe>
@@ -33,9 +33,9 @@ and open the template in the editor.
                 <article id="noticia-pricipal">
                     <header id="cabecalho-artigo">
                         <hgroup>
-                            <h1>Menu > Eventos Criados</h1>
+                            <h1>Menu > Eventos de que participo</h1>
                         </hgroup>
-                        Lista de eventos criados:
+                        Lista de eventos que participo:
                     </header>
                 </article>
                 <footer id="rodape">

@@ -11,7 +11,6 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
         <link rel="stylesheet" type="text/css" href="_css/convites.css">
-        
     </head>
     <body>
         
@@ -24,10 +23,10 @@ and open the template in the editor.
                 <nav id="menu">
                     <ul>
                         
-                        <li><a href="criarEvento.html">Criar Evento</a></li>
-                        <li><a href="convites.html">Convites</a></li>
-                        <li><a href="eventosCriados.html">Eventos Criados</a></li>
-                        <li><a href="partipacaoEventos.html">Participação em Eventos</a></li>
+                        <li><a href="criarEvento.php">Criar Evento</a></li>
+                        <li><a href="convites.php">Convites</a></li>
+                        <li><a href="eventosCriados.php">Eventos Criados</a></li>
+                        <li><a href="partipacaoEventos.php">Participação em Eventos</a></li>
                     </ul>    
                 </nav>
                 <iframe name="janela-calendario" id="calendario" src="https://www.google.com/calendar/embed?src=86c4o9bhc1p9shjob2pcf7sbq4%40group.calendar.google.com&ctz=America/Fortaleza"></iframe>

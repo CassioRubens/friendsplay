@@ -36,13 +36,15 @@ and open the template in the editor.
                 <nav id="menu">
                     <ul>
                         
-                        <li><a href="criarEvento.html">Criar Evento</a></li>
-                        <li><a href="convites.html">Convites</a></li>
-                        <li><a href="eventosCriados.html">Eventos Criados</a></li>
-                        <li><a href="partipacaoEventos.html">Participação em Eventos</a></li>
+                        <li><a href="criarEvento.php">Criar Evento</a></li>
+                        <li><a href="convites.php">Convites</a></li>
+                        <li><a href="eventosCriados.php">Eventos Criados</a></li>
+                        <li><a href="partipacaoEventos.php">Participação em Eventos</a></li>
                     </ul>
                 </nav>
                 <iframe name="janela-calendario" id="calendario-evento" src="https://www.google.com/calendar/embed?src=86c4o9bhc1p9shjob2pcf7sbq4%40group.calendar.google.com&ctz=America/Fortaleza"></iframe>
+                <!--<a target="_blank" href="https://www.google.com/calendar/event?action=TEMPLATE&tmeid=a3RvYTJpcWR2bTIxdmRkdTluZGZmY2ozMmcga2Fpb3NiLjE0QG0&tmsrc=kaiosb.14%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_pt-BR.gif"></a>-->
+                <!--<iframe src="https://www.google.com/calendar/embed?src=86c4o9bhc1p9shjob2pcf7sbq4%40group.calendar.google.com&ctz=America/Fortaleza" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>-->
             </header>
             <section id="principal">
                 <article id="noticia-pricipal">
