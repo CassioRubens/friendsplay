@@ -1,7 +1,7 @@
 <?php 
 include ("_Funcoes/FuncaoSelect.php");
 
-$consulta= select("Evento","*");
+$consulta= select("Evento","*", null, null, null);
 
  ?>
 

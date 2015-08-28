@@ -42,7 +42,7 @@ if ( isset( $session ) ) {
 	    $_SESSION['EMAIL'] =  $femail;
       $_SESSION['AMIGOS'] = $amigos;
     /* ---- header location after session ----*/
-  header("Location: http://localhost/friendsplay/FriendsPlay/public_html/index.php");
+  header("Location: http://localhost/friendsplay/FriendsPlay/index.php");
 } else {
   $loginUrl = $helper->getLoginUrl();
  header("Location: ".$loginUrl);

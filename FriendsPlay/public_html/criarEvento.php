@@ -4,6 +4,10 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+<?php
+
+session_start(); 
+?>
 <html>
     <head>
         <title>Friend's Play</title>
@@ -14,7 +18,7 @@ and open the template in the editor.
     </head>
     <body>
         
-
+        <?php if ($_SESSION['FBID']): ?> 
         <div id="interface">
             <header id="cabecalho">
                 <hgroup>
@@ -22,7 +26,7 @@ and open the template in the editor.
                     <!--<h1>Friend's Play</h1>-->
                     <!--Adicionando a foto do perfil-->
                      <figure class = "foto-legenda">
-                        <img src="https://graph.facebook.com/<?php echo $_GET["FBID"]; ?>/picture">
+                        <img src="https://graph.facebook.com/<?php echo $_SESSION['FBID']; ?>/picture">
                         <figcaption>
                             <p>
                                 📷 Atualizar foto 
@@ -30,7 +34,7 @@ and open the template in the editor.
                         </figcaption>
                     </figure>
                     <?php
-                          echo "<h1>Olá " . $_GET["name"] . "</h1>";?>
+                          echo "<h1>Olá " . $_SESSION['FULLNAME'] . "</h1>";?>
                           <h2 id="cidade-atual">Cidade atual</h2>
                 </hgroup>
 
@@ -160,5 +164,7 @@ and open the template in the editor.
             </footer>
             </section>
         </div>
+        <?php else: echo "Fudeu"?>
+        <?php endif ?>
     </body>
 </html>

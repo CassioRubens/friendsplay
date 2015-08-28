@@ -3,8 +3,7 @@
     include("_conexaoBD/FecharConexao.php");
 
 
-    function select($tabela, $coluna="*", $where=null, $ordem=null, $limite=null){
-
+    function select($tabela, $coluna, $where, $ordem, $limite){
     	//SQL da consulta
     	$sql = "SELECT {$coluna} FROM {$tabela} {$where} {$ordem} {$limite}";
  
