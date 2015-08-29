@@ -22,14 +22,15 @@ and open the template in the editor.
                     <!--<h1>Friend's Play</h1>-->
                     <!--Adicionando a foto do perfil-->
                      <figure class = "foto-legenda">
-                        <img src="_imagens/avatar-perfil-mas.jpg"/>
+                        <img src="https://graph.facebook.com/<?php echo $_GET["FBID"]; ?>/picture">
                         <figcaption>
                             <p>
                                 📷 Atualizar foto 
                             </p>
                         </figcaption>
                     </figure>
-                          <h1 id="nome-do-usuario">Nome do usuário</h1>
+                    <?php
+                          echo "<h1>Olá " . $_GET["name"] . "</h1>";?>
                           <h2 id="cidade-atual">Cidade atual</h2>
                 </hgroup>
 
@@ -132,7 +133,7 @@ and open the template in the editor.
                             <input type="number" name="nNumMax" id="cNumMax" min="1" max="99999"/></p>
                             <fieldset id="privacidadeEvento"><legend>Privacidade</legend>
                             <input type="radio" name="tSexo" id="cMasc" checked/> <label for="cMasc">Publico</label><br/>
-                                <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Privado</label>
+                                <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Privado</label>  
                         </fieldset>
                             </fieldset>
                         
@@ -147,7 +148,7 @@ and open the template in the editor.
                         </fieldset>
                         
                         
-                        <br><button>Criar evento</button>            
+                        <br><button type="submit">Criar evento</button>            
                     </form>
                 </article>
                 <footer id="rodape">

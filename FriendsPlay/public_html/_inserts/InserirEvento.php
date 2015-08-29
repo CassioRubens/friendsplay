@@ -12,9 +12,14 @@ $hora = $_REQUEST['hora'];
 $privacidade = $_REQUEST['privacidade'];
 $descricao = $_REQUEST['descricao'];
 
-inserir(array("nome_evento","local_evento","data_evento","horario_evento","privacidade_evento","descricao_evento"),
-	array($nome,$local,$data,$hora,$privacidade,$descricao), "Evento");
+$local = $_REQUEST['local'];
+$numero = $_REQUEST['numeroDoLocal'];
+$cidade = $_REQUEST['cidade'];
+$estado = $_REQUEST['cEstado'];
 
 
+inserir(array("nome_evento","local_evento","data_evento","horario_evento","privacidade_evento",
+	"descricao_evento", "logradouro", "numero", "cidade", "estado"),
+	array($nome,$local,$data,$hora,$privacidade,$descricao,$local,$numero,$cidade,$estado), "Evento");
 
  ?>
