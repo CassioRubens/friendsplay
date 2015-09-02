@@ -89,7 +89,7 @@ session_start();
                                     
                                     <!--OPTGROUP defini um grupo de opções disponíveis para os
                                     usuários, e OPTION são as opções-->
-                                    <optgroup label="Estados">
+                                    <optgroup label="Estado">
                                         <option value="AC">AC</option>
                                         <option value="AL">AL</option>
                                         <option value="AP">AP</option>
@@ -135,9 +135,10 @@ session_start();
                                 <input type="number" name="nNumMin" id="NumMin" min="1" max="99999"/></p>
                             <p><label for="cNumMax">Nº máximo de participantes:</label>
                             <input type="number" name="nNumMax" id="cNumMax" min="1" max="99999"/></p>
+                            
                             <fieldset id="privacidadeEvento"><legend>Privacidade</legend>
-                            <input type="radio" name="tSexo" id="cMasc" checked/> <label for="cMasc">Publico</label><br/>
-                                <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Privado</label>  
+                            <input type="radio" name="privacidade" id="cMasc" checked/> <label for="cMasc">Publico</label><br/>
+                                <input type="radio" name="privacidade" id="cFem"/> <label for="cFem">Privado</label>  
                         </fieldset>
                             </fieldset>
                         
