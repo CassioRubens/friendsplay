@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 // added in v4.0.0
 require_once 'autoload.php';
 use Facebook\FacebookSession;
@@ -41,6 +42,9 @@ if ( isset( $session ) ) {
         $_SESSION['FULLNAME'] = $fbfullname;
 	    $_SESSION['EMAIL'] =  $femail;
       $_SESSION['AMIGOS'] = $amigos;
+
+      inserir(array("nome_usuario","id_usuario"), array($id,$nome));
+
     /* ---- header location after session ----*/
   header("Location: http://localhost/friendsplay/FriendsPlay/index.php");
 } else {
