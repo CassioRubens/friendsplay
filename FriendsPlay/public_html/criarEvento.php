@@ -85,7 +85,7 @@ session_start();
                             <p><label for="cEstado">Estado:</label>
                                 
                                 <!--SELECT mostra apenas as escolhas que o usuário pode ver-->
-                                <select type="text" name="tEstado" id="cEstado">
+                                <select type="text" name="nEstado" id="cEstado">
                                     
                                     <!--OPTGROUP defini um grupo de opções disponíveis para os
                                     usuários, e OPTION são as opções-->
@@ -136,8 +136,8 @@ session_start();
                             <p><label for="cNumMax">Nº máximo de participantes:</label>
                             <input type="number" name="nNumMax" id="cNumMax" min="1" max="99999"/></p>
                             
-                            <fieldset id="privacidadeEvento"><legend>Privacidade</legend>
-                            <input type="radio" name="privacidade" id="cMasc" checked/> <label for="cMasc">Publico</label><br/>
+                            <fieldset id="privacidadeEvento" name="nPrivacidade"><legend>Privacidade</legend>
+                            <input type="radio" name="pPublico" id="cMasc" checked/> <label for="cMasc">Publico</label><br/>
                                 <input type="radio" name="privacidade" id="cFem"/> <label for="cFem">Privado</label>  
                         </fieldset>
                             </fieldset>

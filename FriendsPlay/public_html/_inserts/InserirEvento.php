@@ -4,21 +4,21 @@ include ("../_Funcoes/FuncaoInserir.php");
 
 
 //Perfil
-$nome = $_REQUEST['nome'];
+$nome = $_REQUEST['nNome'];
 
 
 //Logradouro
-$local = $_REQUEST['local'];
-$numeroDoLocal = $_REQUEST['numeroDoLocal'];
-$cidade = $_REQUEST['cidade'];
-$estado = $_REQUEST['tEstado'];
+$local = $_REQUEST['nLocal'];
+$numeroDoLocal = $_REQUEST['nNumeroDolocal'];
+$cidade = $_REQUEST['nCidade'];
+$estado = $_REQUEST['nEstado'];
 
 //Caracteristicas e data
 $data = $_REQUEST['data'];
 $hora = $_REQUEST['hora'];	
-$numeroMaximo = $_REQUEST['cNumMax'];
-$numeroMinimo = $_REQUEST['NumMin'];
-$privacidade = $_REQUEST['privacidade'];
+$numeroMaximo = $_REQUEST['nNumMax'];
+$numeroMinimo = $_REQUEST['nNumMin'];
+$privacidade = $_REQUEST['nPrivacidade'];
 
 //Descrição
 $descricao = $_REQUEST['descricao'];
@@ -28,6 +28,6 @@ $descricao = $_REQUEST['descricao'];
 
 inserir(array("nome_evento","local_evento", "numero", "cidade", "estado", "data_evento","horario_evento","privacidade_evento",
 	"descricao_evento"),
-	array($nome,$local,$data,$hora,$privacidade,$descricao,$local,$numero,$cidade,$estado), "Evento");
+	array($nome, $local, $numeroDoLocal, $cidade,  $estado, $data, $hora, $privacidade, $descricao  ), "Evento");
 
  ?>
