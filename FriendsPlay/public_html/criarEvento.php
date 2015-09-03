@@ -18,7 +18,9 @@ session_start();
     </head>
     <body>
         
-        <?php if ($_SESSION['FBID']): ?> 
+        <?php
+        $session = true;
+         if ($session): ?> 
         <div id="interface">
             <header id="cabecalho">
                 <hgroup>
@@ -137,8 +139,8 @@ session_start();
                             <input type="number" name="nNumMax" id="cNumMax" min="1" max="99999"/></p>
                             
                             <fieldset id="privacidadeEvento" name="nPrivacidade"><legend>Privacidade</legend>
-                            <input type="radio" name="pPublico" id="cMasc" checked/> <label for="cMasc">Publico</label><br/>
-                                <input type="radio" name="privacidade" id="cFem"/> <label for="cFem">Privado</label>  
+                            <input type="radio" name="nPrivacidade" id="publico" checked/> <label for="publico">Publico</label><br/>
+                                <input type="radio" name="nPrivacidade" id="privacidade"/> <label for="privado">Privado</label>  
                         </fieldset>
                             </fieldset>
                         

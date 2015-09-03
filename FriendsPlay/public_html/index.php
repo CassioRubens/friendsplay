@@ -1,5 +1,4 @@
 <?php
-
 session_start(); 
 ?>
 <!doctype html>
@@ -14,7 +13,7 @@ session_start();
   <body>
   <?php if ($_SESSION['FBID']): ?>      <!--  After user login  -->
 
-<?php header("Location: public_html/criarEvento.php"); ?>
+<?php header("Location: criarEvento.php"); ?>
 
 
     <?php else: ?>     <!-- Before login --> 
@@ -22,7 +21,7 @@ session_start();
 <img id="img-logo" src="_imagens/tela-principal.png"/>
                 <nav id="figuras">
                     <ul>
-                        <li id="login-fig"><a href="public_html/fbconfig.php" ><img src="public_html/_imagens/login.png"/></a></li><br/>
+                        <li id="login-fig"><a href="fbconfig.php" ><img src="_imagens/login.png"/></a></li><br/>
                         <li id="login-nome"><a href="http://www.facebook.com/" target="_blank">Ainda não é cadastrado?</a></li>
                     </ul>
                 </nav>

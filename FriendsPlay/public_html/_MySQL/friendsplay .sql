@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Tempo de geração: 02/09/2015 às 14:50
+-- Tempo de geração: 03/09/2015 às 19:57
 -- Versão do servidor: 5.6.24
 -- Versão do PHP: 5.6.8
 
@@ -81,11 +81,11 @@ CREATE TABLE IF NOT EXISTS `Evento` (
   `numero` int(11) DEFAULT NULL,
   `cidade` varchar(30) DEFAULT NULL,
   `estado` varchar(20) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
 
 --
 -- Fazendo dump de dados para tabela `Evento`
-
+--
 
 -- --------------------------------------------------------
 
@@ -98,14 +98,10 @@ CREATE TABLE IF NOT EXISTS `Usuario` (
   `nome_usuario` varchar(30) DEFAULT NULL,
   `data_de_nascimento_usuario` date DEFAULT NULL,
   `genero_usuario` enum('M','F') DEFAULT NULL,
-  `id_usuario` smallint(5) unsigned NOT NULL DEFAULT '0'
+  `id_usuario` int(10) unsigned NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Fazendo dump de dados para tabela `Usuario`
---
 
---
 -- Índices de tabela `Categoria_Esportiva`
 --
 ALTER TABLE `Categoria_Esportiva`
@@ -148,7 +144,7 @@ ALTER TABLE `Convite`
 -- AUTO_INCREMENT de tabela `Evento`
 --
 ALTER TABLE `Evento`
-  MODIFY `id_evento` smallint(5) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
+  MODIFY `id_evento` smallint(5) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=23;
 --
 -- Restrições para dumps de tabelas
 --

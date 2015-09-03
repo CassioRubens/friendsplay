@@ -1,4 +1,7 @@
 <?php
+include ("_Funcoes/FuncaoInserirFB.php");
+include ("_Funcoes/FuncaoSelect.php"); 
+
 session_start();
 
 // added in v4.0.0
@@ -43,10 +46,20 @@ if ( isset( $session ) ) {
 	    $_SESSION['EMAIL'] =  $femail;
       $_SESSION['AMIGOS'] = $amigos;
 
-      inserir(array("nome_usuario","id_usuario"), array($id,$nome));
+      
+      $consulta= select("Usuario","id_usuario", "WHERE id_usuario = $fbid", null, null);
 
-    /* ---- header location after session ----*/
-  header("Location: http://localhost/friendsplay/FriendsPlay/index.php");
+       if ($consulta) {
+         header("Location: criarEvento.php");
+       }else{
+
+         inserir(array("nome_usuario","id_usuario"), array($fbfullname,$fbid),'Usuario');
+
+         header("Location: criarEvento.php");
+       }
+      
+   /* ---- header location after session ----*/
+   //header("Location: http://localhost/friendsplay/FriendsPlay/index.php");
 } else {
   $loginUrl = $helper->getLoginUrl();
  header("Location: ".$loginUrl);
