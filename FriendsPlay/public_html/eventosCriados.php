@@ -1,7 +1,7 @@
 <?php 
 include ("_Funcoes/FuncaoSelect.php");
 
-$consulta= select("Evento","*", null, null, null);
+$consulta= select("evento","*", null, null, null);
 
  ?>
 
@@ -56,12 +56,8 @@ and open the template in the editor.
                                     
                          ?>
                         <div class="linha">
-                            <div class="coluna"><?php echo $consulta[$i]['nome_evento'] ?></div>
-                            <div class="coluna"><?php echo $consulta[$i]['local_evento'] ?></div>
-                            <div class="coluna"><?php echo $consulta[$i]['data_evento'] ?></div>
-                            <div class="coluna"><?php echo $consulta[$i]['horario_evento'] ?></div>
-                            <div class="coluna"><?php echo $consulta[$i]['contador_participantes_evento'] ?></div>
-                            <div class="coluna"><?php echo $consulta[$i]['privacidade_evento'] ?></div>
+                            <div class="coluna"><?php echo $consulta[$i]['nome'] ?></div>
+                            <div class="coluna"><?php echo $consulta[$i]['data'] ?></div>
                         </div>
                         <?php 
                                 }

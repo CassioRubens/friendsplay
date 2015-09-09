@@ -1,6 +1,6 @@
 <?php
 
-function connect($banco="friendsplay", $usuario="root", $senha="", $localhost="localhost"){
+function connect($banco="friendsPlay", $usuario="root", $senha="", $localhost="localhost"){
     //Tentar estabelecer a conexão
     $connect = mysql_connect($localhost, $usuario, $senha);
     //Conseguiu conectar?

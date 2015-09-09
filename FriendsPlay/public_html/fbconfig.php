@@ -47,13 +47,13 @@ if ( isset( $session ) ) {
       $_SESSION['AMIGOS'] = $amigos;
 
       
-      $consulta= select("Usuario","id_usuario", "WHERE id_usuario = $fbid", null, null);
+      $consulta= select("usuario","id_usuario", "WHERE id_usuario = $fbid", null, null);
 
        if ($consulta) {
          header("Location: criarEvento.php");
        }else{
 
-         inserir(array("nome_usuario","id_usuario"), array($fbfullname,$fbid),'Usuario');
+         inserir(array("nome","id_usuario"), array($fbfullname,$fbid),'usuario');
 
          header("Location: criarEvento.php");
        }
